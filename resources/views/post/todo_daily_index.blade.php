@@ -17,10 +17,10 @@
                      <p>DIARY:お母さんのお手伝いをしました。喜んでいました。</p>
                      <textarea name="todo" placeholder=""></textarea>
                      <input type="hidden" name="user_id"  value="{{Auth::user()->id}}">
-                         <p><button class="btn btn-primary" name="todo" type="submit">TODOを作成</button></p>
+                         <p><button class="btn btn-primary"type="submit">TODOを作成</button></p>
                      <textarea name="diary" placeholder=""></textarea>
                      <input type="hidden" name="user_id"  value="{{Auth::user()->id}}">
-                         <p><button class="btn btn-danger" name="diary" type="submit">DIARYを作成</button></p>
+                         <p><button class="btn btn-danger"type="submit">DIARYを作成</button></p>
                 </form>
             </div>
 </div>

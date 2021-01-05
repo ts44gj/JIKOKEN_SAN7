@@ -19,16 +19,22 @@ class TargetController extends Controller
     public function post(Request $request){
         $user = Auth::user();
 
-        //bifがpostされた時
+        //bigがpostされた時
         if($request->has('big')){
             $bigPost = $request->all();
             Target::create($bigPost);
+            $bigPost = array(
+			'big' => $request->input('big'),
+        );
             return view('post.send');
 
         //middleがpostされた時
         }elseif($request->has('middle')){
             $middlePost = $request->all();
             Target::create($middlePost);
+            $middlePost = array(
+			'middle' => $request->input('middle'),
+        );
             return view('post.send');
         };
     }
