@@ -15,7 +15,7 @@
                         </div>
                     @endif
                     {{ __('You are logged in!') }}
-                    <p><a href="home/myprofile">マイページへ</a<></p>
+                    <p><a href="home/myprofile">マイページへ</a></p>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
 </div>
 
 <div class="row justify-content-center">
-  <a href="/post/timeline">
+  <a href="{{action('PostController@showTimeline')}}">
       <button class="btn btn-danger" type="submit">みんなの投稿へ</button>
   </a>
 </div>

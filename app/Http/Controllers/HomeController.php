@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Post;
+use App\Target;
 use App\Comment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -51,7 +52,7 @@ class HomeController extends Controller
     {
         //投稿者を判別するためのリレーション処理
         $user = Post::find($id)->user;
-        
+
         $user_id = Post::find($id)->user->id;
         $posts = Post::where('user_id', $user_id)->get();
 

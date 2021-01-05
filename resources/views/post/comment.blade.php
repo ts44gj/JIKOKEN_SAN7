@@ -3,7 +3,6 @@
 @include('common.aside')
 
 @section('content')
-
  <div class="row justify-content-center">
    <p>
         @if( $post -> diary  === NULL)

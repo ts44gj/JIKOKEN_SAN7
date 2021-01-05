@@ -17,16 +17,16 @@
         @if( $post -> diary  === NULL)
             <div class="row justify-content-center">
               <p class="">todo:{{ $post -> todo }}</p>
-              <p class=""><a href="/post/comment/{{ $post -> id }}">コメント</a></p>
+              <p class=""><a href="{{action("PostController@showComment",$post -> id )}}">コメント</a></p>
             </div>
         @else( $post -> todo  === NULL)
             <div class="row justify-content-center">
               <p class="">diary:{{ $post -> diary }}</p>
-              <p class=""><a href="/post/comment/{{ $post -> id }}">コメント</a></p>
+              <p class=""><a href="{{action("PostController@showComment",$post -> id )}}">コメント</a></p>
             </div>
         @endif
       @endforeach
-     
+
  </div>
 
 @endsection

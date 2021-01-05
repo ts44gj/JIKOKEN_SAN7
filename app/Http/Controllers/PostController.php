@@ -15,7 +15,7 @@ class PostController extends Controller
     public function index(){
         return view('post.todo_daily_index');
     }
-    
+
     //DBに登録し、投稿完了画面へ
     public function post(Request $request){
         $user = Auth::user();
@@ -25,7 +25,7 @@ class PostController extends Controller
             $todoPost = $request->all();
             Post::create($todoPost);
             return view('post.send');
-            
+
         //diaryがpostされた時
         }elseif($request->has('daily')){
             $diaryPost = $request->all();
@@ -68,12 +68,12 @@ class PostController extends Controller
     {
        //データを受け取る
         $input = $request_comment->all();
-  
+
         Comment::create($input);
 
         return redirect(route('showComment'));
     }
 
 
-    
+
 }
