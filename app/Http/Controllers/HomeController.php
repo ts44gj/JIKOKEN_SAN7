@@ -29,7 +29,8 @@ class HomeController extends Controller
     public function index()
     {
          $tasks = Post::whereNotNull('todo')->get();
-        return view('home',['tasks' =>$tasks]);
+         $dialies = Post::whereNotNull('diary')->get();
+        return view('home',['tasks' =>$tasks],['dialies'=>$dialies]);
 
     }
 

@@ -28,6 +28,8 @@
 </div>
 <div class="row justify-content-center">
   <p>task</p>
+</div>
+<div class="row justify-content-center">
 <ul>
     @foreach ($tasks as $task)
     <li>{{$task->todo}}</li>
@@ -37,6 +39,13 @@
 
 <div class="row justify-content-center">
 <p>daily</p>
+</div>
+<div class="row justify-content-center">
+<ul>
+    @foreach ($dialies as $diary)
+    <li>{{$diary->diary}}</li>
+    @endforeach
+</ul>
 </div>
 <div class="row justify-content-center">
     <a href="{{action('BookmarkController@index')}}">
