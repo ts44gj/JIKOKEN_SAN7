@@ -64,3 +64,4 @@ Route::post('/post/comment/{id}','PostController@postComment');
 
 //ユーザープロフィール画面へ遷移
 Route::get('/userprofile/{id}', 'HomeController@showUserProfile')->name('userprofile');
+

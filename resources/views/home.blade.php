@@ -22,13 +22,19 @@
     </div>
 </div>
 <div class="row justify-content-center">
-  <p>task</p>
-</div>
-<div class="row justify-content-center">
 <a href="{{action('PostController@index')}}">
     <button class="btn btn-danger" type="submit">newpost</button>
 </a>
 </div>
+<div class="row justify-content-center">
+  <p>task</p>
+<ul>
+    @foreach ($tasks as $task)
+    <li>{{$task->todo}}</li>
+    @endforeach
+</ul>
+</div>
+
 <div class="row justify-content-center">
 <p>daily</p>
 </div>

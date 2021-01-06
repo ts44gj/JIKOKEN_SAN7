@@ -28,7 +28,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+         $tasks = Post::whereNotNull('todo')->get();
+        return view('home',['tasks' =>$tasks]);
+
     }
 
     /**
