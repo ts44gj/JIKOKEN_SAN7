@@ -24,12 +24,18 @@ class PostController extends Controller
         if($request->has('todo')){
             $todoPost = $request->all();
             Post::create($todoPost);
+             $todoPost = array(
+			'todo' => $request->input('todo'),
+        );
             return view('post.send');
 
         //diaryがpostされた時
         }elseif($request->has('daily')){
             $diaryPost = $request->all();
             Post::create($diaryPost);
+             $diaryPost = array(
+			'diary' => $request->input('diary'),
+        );
             return view('post.send');
         };
     }

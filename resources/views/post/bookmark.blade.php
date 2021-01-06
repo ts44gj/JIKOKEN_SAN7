@@ -9,16 +9,17 @@
         <div class="card">
             <div class="card-header">{{ __('bookmark') }}</div>
             <div class="card-body">
-                <form method="post" action="{{ url('/post/send')}}">
+                <form method="post" action="">
                     {{ csrf_field() }}
+                    <input type="hidden" name="user_id"  value="{{Auth::user()->id}}">
                     <h1>ブックマーク登録</h1>
                     <ul style="list-style: none;">
-                    <li>タイトル<input type="text" name="bookmark"></li>
-                    <li>URL　　<input type="text" name="bookmark"></li>
-                    <li>説明文　<input type="text" name="bookmark"></li>
+                    <li>タイトル<input type="text" name="title"></li>
+                    <li>URL　　<input type="text" name="url"></li>
+                    <li>説明文　<input type="text" name="explanatory_text"></li>
                     </ul>
                     </p>
-                        <button class="btn btn-primary" name="big" type="submit">保存</button>
+                        <button class="btn btn-primary" name="bookmark" type="submit">保存</button>
                     </p>
                 </form>
             </div>

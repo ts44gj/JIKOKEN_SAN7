@@ -17,10 +17,10 @@
                     <p>Middle:就職する。</p>
                     <textarea name="big" placeholder=""></textarea>
                      <input type="hidden" name="user_id"  value="{{Auth::user()->id}}">
-                         <p><button class="btn btn-primary" name="big" type="submit">BIGを作成</button></p>
+                         <p><button class="btn btn-primary" type="submit">BIGを作成</button></p>
                      <textarea name="middle" placeholder=""></textarea>
                      <input type="hidden" name="user_id"  value="{{Auth::user()->id}}">
-                         <p><button class="btn btn-danger" name="middle" type="submit">MIDDLEを作成</button></p>
+                         <p><button class="btn btn-danger"  type="submit">MIDDLEを作成</button></p>
                 </form>
                 </div>
             </div>
