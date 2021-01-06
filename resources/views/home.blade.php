@@ -15,22 +15,22 @@
                         </div>
                     @endif
                     {{ __('You are logged in!') }}
-                    <p><a href="home/myprofile">マイページへ</a></p>
+                    <p><a href="home/myprofile">マイページへ</a<></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="row justify-content-center">
+<!-- <div class="row justify-content-center">
   <p>task</p>
-</div>
+</div> -->
 <div class="row justify-content-center">
 <a href="{{action('PostController@index')}}">
-    <button class="btn btn-danger" type="submit">newpost</button>
+    <button class="btn btn-danger" type="submit">newpost(todo/diary)</button>
 </a>
 </div>
 <div class="row justify-content-center">
-<p>daily</p>
+<!-- <p>daily</p> -->
 </div>
 <div class="row justify-content-center">
     <a href="{{action('BookmarkController@index')}}">
@@ -39,8 +39,8 @@
 </div>
 
 <div class="row justify-content-center">
-  <a href="{{action('PostController@showTimeline')}}">
-      <button class="btn btn-danger" type="submit">みんなの投稿へ</button>
+  <a href="/post/timeline">
+      <!-- <button class="btn btn-danger" type="submit">みんなの投稿へ</button> -->
   </a>
 </div>
 @endsection
