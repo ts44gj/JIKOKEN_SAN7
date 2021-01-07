@@ -87,8 +87,13 @@
         また、自己研鑽を積む仲間の刺激的な姿もあなたを強くするのに必要なものとなるでしょう。</p>
     </div>
 </div>
-
-
-@include('common.footer')
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer-container">
+            <p><a href="https://github.com/Kano-engineer/JIKOKEN_SAN7.git">
+            <i class="fab fa-github fa-fw git-navy"></i></a></p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
