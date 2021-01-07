@@ -6,7 +6,7 @@
   --pink: #f66d9b;
   --red: #e3342f;
   --orange: #f6993f;
-  --yellow: #ffed4a;
+  --yellow: #ffd803;
   --green: #38c172;
   --teal: #4dc0b5;
   --cyan: #6cb2eb;
@@ -17,7 +17,7 @@
   --secondary: #6c757d;
   --success: #38c172;
   --info: #6cb2eb;
-  --warning: #ffed4a;
+  --warning: #ffd803;
   --danger: #e3342f;
   --light: #f8f9fa;
   --dark: #343a40;
@@ -2825,8 +2825,8 @@ fieldset:disabled a.btn {
 
 .btn-warning {
   color: #212529;
-  background-color: #ffed4a;
-  border-color: #ffed4a;
+  background-color: #ffd803;
+  border-color: #ffd803;
 }
 
 .btn-warning:hover {
@@ -2846,8 +2846,8 @@ fieldset:disabled a.btn {
 .btn-warning.disabled,
 .btn-warning:disabled {
   color: #212529;
-  background-color: #ffed4a;
-  border-color: #ffed4a;
+  background-color: #ffd803;
+  border-color: #ffd803;
 }
 
 .btn-warning:not(:disabled):not(.disabled):active,
@@ -3132,14 +3132,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-warning {
-  color: #ffed4a;
-  border-color: #ffed4a;
+  color: #ffd803;
+  border-color: #ffd803;
 }
 
 .btn-outline-warning:hover {
   color: #212529;
-  background-color: #ffed4a;
-  border-color: #ffed4a;
+  background-color: #ffd803;
+  border-color: #ffd803;
 }
 
 .btn-outline-warning:focus,
@@ -3149,7 +3149,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-warning.disabled,
 .btn-outline-warning:disabled {
-  color: #ffed4a;
+  color: #ffd803;
   background-color: transparent;
 }
 
@@ -3157,8 +3157,8 @@ fieldset:disabled a.btn {
 .btn-outline-warning:not(:disabled):not(.disabled).active,
 .show > .btn-outline-warning.dropdown-toggle {
   color: #212529;
-  background-color: #ffed4a;
-  border-color: #ffed4a;
+  background-color: #ffd803;
+  border-color: #ffd803;
 }
 
 .btn-outline-warning:not(:disabled):not(.disabled):active:focus,
@@ -5405,7 +5405,7 @@ a.badge-info.focus {
 
 .badge-warning {
   color: #212529;
-  background-color: #ffed4a;
+  background-color: #ffd803;
 }
 
 a.badge-warning:hover,
@@ -6992,7 +6992,7 @@ button.bg-info:focus {
 }
 
 .bg-warning {
-  background-color: #ffed4a !important;
+  background-color: #ffd803 !important;
 }
 
 a.bg-warning:hover,
@@ -7100,7 +7100,7 @@ button.bg-dark:focus {
 }
 
 .border-warning {
-  border-color: #ffed4a !important;
+  border-color: #ffd803 !important;
 }
 
 .border-danger {
@@ -10718,7 +10718,7 @@ a.text-info:focus {
 }
 
 .text-warning {
-  color: #ffed4a !important;
+  color: #ffd803 !important;
 }
 
 a.text-warning:hover,
@@ -10912,7 +10912,7 @@ a.text-dark:focus {
 }
 /*ロゴを光らせる*/
 .main-logo:before {
-  -webkit-animation: shine .6s ease 1.5s;
+  animation: shine .6s ease 1.5s;
   content:"";
   position: absolute;
   top: 0;
@@ -10921,7 +10921,7 @@ a.text-dark:focus {
   height: 100%;
   transform: rotate3d(0,0,1,-45deg) translate3d(0,-120%,0);
 }
-@-webkit-keyframes shine {
+@keyframes shine {
   0% {transform: rotate3d(0,0,1,-45deg) translate3d(0,-120%,0);background: rgba(255,255,255,0.5);}
   100% {transform: rotate3d(0,0,1,-25deg) translate3d(0,150%,0);background: rgba(255,255,255,0.5);}
 }
@@ -11039,4 +11039,40 @@ blockquote p{
 .out-container{
   text-align: center;
   margin: 50px auto;
+}
+
+/*ここからfooter作業*/
+/*
+.footer-wrapper {
+  height: 200px;
+}
+*/
+
+.footer-container{
+  width: 100%;
+  min-height: 80px;
+  padding: 20px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.git-navy{
+  font-size: 50px;
+  color: #272343;
+}
+.git-navy:hover{
+  font-size: 53px;
+  color: #ffd803;
+}
+
+.made-btn-803{
+  color: #272343;
+  border: solid 3px #272343;
+  background-color: #fff;
+  border-radius: 1em;
+}
+.made-btn-803:hover{
+  color: #272343;
+  border: solid 3px #272343;
+  background-color: #ffd803;
 }
