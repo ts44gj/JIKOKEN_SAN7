@@ -32,7 +32,8 @@ Route::get('/post/todo_daily','PostController@index');
 //todoとdiary作成して、画面遷移
 Route::post('/post/todo_daily','PostController@post');
 
-//todoとdiary作成完了画面へ遷移
+//todoとdiary作成完了画面へ遷移 
+// ➡︎不要？
 Route::get('/post/send','PostController@send');
 
 //target作成画面へ遷移

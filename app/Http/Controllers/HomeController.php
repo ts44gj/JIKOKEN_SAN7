@@ -18,7 +18,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+         $this->middleware('auth');
     }
 
     /**
@@ -28,7 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+         return view('home');
     }
 
     /**
@@ -38,24 +38,23 @@ class HomeController extends Controller
      */
     public function push()
     {
-        return view('push');
+         return view('push');
     }
 
     //プロフィール画面を表示
     public function showMyProfile()
     {
-        return view('myprofile');
+         return view('myprofile');
     }
-
+    
     //ユーザープロフィール画面を表示
     public function showUserProfile($id)
     {
-        //投稿者を判別するためのリレーション処理
-        $user = Post::find($id)->user;
+             //投稿者を判別するためのリレーション処理
+             $user = Post::find($id)->user;
+             $user_id = Post::find($id)->user->id;
+             $posts = Post::where('user_id', $user_id)->get();
 
-        $user_id = Post::find($id)->user->id;
-        $posts = Post::where('user_id', $user_id)->get();
-
-        return view('userprofile',['user' => $user],['posts' => $posts]);
+         return view('userprofile',['user' => $user],['posts' => $posts]);
     }
 }

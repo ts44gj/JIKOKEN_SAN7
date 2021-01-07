@@ -1,9 +1,11 @@
 @include('common.head')
 @include('common.navbar')
+
 @section('title','目標')
-    <a href="{{action('HomeController@index')}}">
-        <button class="btn btn-danger" type="submit">jikoken</button>
-    </a>
+<a href="{{action('HomeController@index')}}">
+    <button class="btn btn-danger" type="submit">jikoken</button>
+</a>
+
 <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card">
@@ -18,7 +20,8 @@
                     <textarea name="big" placeholder=""></textarea>
                      <input type="hidden" name="user_id"  value="{{Auth::user()->id}}">
                          <p><button class="btn btn-primary" type="submit">BIGを作成</button></p>
-                     <textarea name="middle" placeholder=""></textarea>
+
+                    <textarea name="middle" placeholder=""></textarea>
                      <input type="hidden" name="user_id"  value="{{Auth::user()->id}}">
                          <p><button class="btn btn-danger"  type="submit">MIDDLEを作成</button></p>
                 </form>
